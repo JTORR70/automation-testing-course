@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Navigation" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-08T21:03:04" hostname="BOU499879" time="10.848">
+  <properties/>
+  <testcase name="Los usuarios pueden seleccionar un plan cuando esten logueados" classname="Navigation" time="10.848"/>
+  <system-out><![CDATA[
+@Plans
+Scenario: Los usuarios pueden seleccionar un plan cuando esten logueados ?[90m# src/test/resources/features/ArchivoFeature.feature:18?[0m
+  ?[32mGiven ?[0m?[32mI navigate to www.freerangetesters.com?[0m                           ?[90m# steps.PageSteps.iNavigateToFRT()?[0m
+  ?[32mWhen ?[0m?[32mSelecciono un plan?[0m                                                ?[90m# steps.PageSteps.clickOnThePlanButton()?[0m
+  ?[32mThen ?[0m?[32mPuedo validar las opciones de los planes?[0m                          ?[90m# steps.PageSteps.validateCheckoutPlan()?[0m
+]]></system-out>
+  <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+</testsuite>

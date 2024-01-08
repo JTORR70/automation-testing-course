@@ -1,0 +1,17 @@
+public void ejemploAsserts(){
+        String palabraEsperada = "Pepe";
+        String palabraEncontrada = "Papa";
+
+        //Verificar que dos valores son iguales
+        Assert.assertEquals(palabraEsperada, palabraEncontrada);
+
+        //Verificar que dos valores NO son iguales
+        Assert.assertNotEquals(palabraEsperada, palabraEncontrada);
+
+        //Verificar que una condición es verdadera
+        Assert.assertTrue(palabraEncontrada.contains(palabraEsperada));
+
+        //Soft Assertions: No detienen la ejecucion al fallar. Ideal para verificar
+        //Muchas cosas pequeñas a la vez
+        soft.assertEquals(palabraEsperada, palabraEncontrada);
+    }
