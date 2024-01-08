@@ -23,13 +23,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">5</div>
+<div class="counter">1</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">15.485s</div>
+<div class="counter">4.928s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,16 +61,37 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Tests</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Standard output</a>
+<a href="#tab1">Tests</a>
 </li>
 <li>
-<a href="#tab2">Standard error</a>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="Los usuarios pueden seleccionar un plan cuando esten logueados"></a>
+<h3 class="failures">Los usuarios pueden seleccionar un plan cuando esten logueados</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Lists differ at element [1]: Academia: $176 / año • 11 productos != Academia: $177 / año • 11 productos expected [Academia: $176 / año • 11 productos] but found [Academia: $177 / año • 11 productos]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:1644)
+	at org.testng.Assert.assertEquals(Assert.java:1606)
+	at steps.PageSteps.validateCheckoutPlan(PageSteps.java:37)
+	at ✽.Puedo validar las opciones de los planes(file:///home/jtorr70/Documentos/TESTING/automation-QA/UdemySeleniumJava/src/test/resources/ArchivoFeature.feature:21)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -81,59 +102,34 @@
 </tr>
 </thead>
 <tr>
-<td class="success">I can access the subpages through the nagigation bar #1</td>
-<td class="success">4.577s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">I can access the subpages through the nagigation bar #2</td>
-<td class="success">2.815s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">I can access the subpages through the nagigation bar #3</td>
-<td class="success">2.429s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">I can access the subpages through the nagigation bar #4</td>
-<td class="success">3.002s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">I can access the subpages through the nagigation bar #5</td>
-<td class="success">2.662s</td>
-<td class="success">passed</td>
+<td class="failures">Los usuarios pueden seleccionar un plan cuando esten logueados</td>
+<td class="failures">4.928s</td>
+<td class="failures">failed</td>
 </tr>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
 <pre>
-Scenario Outline: I can access the subpages through the nagigation bar ?[90m# src/test/resources/features/ArchivoFeature.feature:11?[0m
-  ?[32mGiven ?[0m?[32mI navigate to www.freerangetesters.com?[0m                         ?[90m# steps.PageSteps.iNavigateToFRT()?[0m
-  ?[32mWhen ?[0m?[32mI go to ?[0m?[32m?[1mCursos?[0m?[32m using the navigation bar?[0m                         ?[90m# steps.PageSteps.navigationBarUse(java.lang.String)?[0m
-
-Scenario Outline: I can access the subpages through the nagigation bar ?[90m# src/test/resources/features/ArchivoFeature.feature:12?[0m
-  ?[32mGiven ?[0m?[32mI navigate to www.freerangetesters.com?[0m                         ?[90m# steps.PageSteps.iNavigateToFRT()?[0m
-  ?[32mWhen ?[0m?[32mI go to ?[0m?[32m?[1mRecursos?[0m?[32m using the navigation bar?[0m                       ?[90m# steps.PageSteps.navigationBarUse(java.lang.String)?[0m
-
-Scenario Outline: I can access the subpages through the nagigation bar ?[90m# src/test/resources/features/ArchivoFeature.feature:13?[0m
-  ?[32mGiven ?[0m?[32mI navigate to www.freerangetesters.com?[0m                         ?[90m# steps.PageSteps.iNavigateToFRT()?[0m
-  ?[32mWhen ?[0m?[32mI go to ?[0m?[32m?[1mNewsletter?[0m?[32m using the navigation bar?[0m                     ?[90m# steps.PageSteps.navigationBarUse(java.lang.String)?[0m
-
-Scenario Outline: I can access the subpages through the nagigation bar ?[90m# src/test/resources/features/ArchivoFeature.feature:14?[0m
-  ?[32mGiven ?[0m?[32mI navigate to www.freerangetesters.com?[0m                         ?[90m# steps.PageSteps.iNavigateToFRT()?[0m
-  ?[32mWhen ?[0m?[32mI go to ?[0m?[32m?[1mUdemy?[0m?[32m using the navigation bar?[0m                          ?[90m# steps.PageSteps.navigationBarUse(java.lang.String)?[0m
-
-Scenario Outline: I can access the subpages through the nagigation bar ?[90m# src/test/resources/features/ArchivoFeature.feature:15?[0m
-  ?[32mGiven ?[0m?[32mI navigate to www.freerangetesters.com?[0m                         ?[90m# steps.PageSteps.iNavigateToFRT()?[0m
-  ?[32mWhen ?[0m?[32mI go to ?[0m?[32m?[1mMentorías?[0m?[32m using the navigation bar?[0m                      ?[90m# steps.PageSteps.navigationBarUse(java.lang.String)?[0m
+@Plans
+Scenario: Los usuarios pueden seleccionar un plan cuando esten logueados ?[90m# src/test/resources/ArchivoFeature.feature:18?[0m
+  ?[32mGiven ?[0m?[32mI navigate to www.freerangetesters.com?[0m                           ?[90m# steps.PageSteps.iNavigateToFRT()?[0m
+  ?[32mWhen ?[0m?[32mSelecciono un plan?[0m                                                ?[90m# steps.PageSteps.clickOnThePlanButton()?[0m
+  ?[31mThen ?[0m?[31mPuedo validar las opciones de los planes?[0m                          ?[90m# steps.PageSteps.validateCheckoutPlan()?[0m
+      ?[31mjava.lang.AssertionError: Lists differ at element [1]: Academia: $176 / año • 11 productos != Academia: $177 / año • 11 productos expected [Academia: $176 / año • 11 productos] but found [Academia: $177 / año • 11 productos]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:1644)
+	at org.testng.Assert.assertEquals(Assert.java:1606)
+	at steps.PageSteps.validateCheckoutPlan(PageSteps.java:37)
+	at ✽.Puedo validar las opciones de los planes(file:///home/jtorr70/Documentos/TESTING/automation-QA/UdemySeleniumJava/src/test/resources/ArchivoFeature.feature:21)
+?[0m
 </pre>
 </span>
 </div>
-<div id="tab2" class="tab">
+<div id="tab3" class="tab">
 <h2>Standard error</h2>
 <span class="code">
 <pre>SLF4J(W): No SLF4J providers were found.
@@ -150,7 +146,7 @@ SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.5</a> at 8/01/2024, 4:31:27 p. m.</p>
+<a href="http://www.gradle.org">Gradle 8.5</a> at 8/01/2024, 5:02:35 p. m.</p>
 </div>
 </div>
 </body>

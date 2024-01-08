@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Navigation" tests="5" skipped="0" failures="0" errors="0" timestamp="2024-01-08T21:31:08" hostname="BOU499879" time="15.485">
+<testsuite name="Navigation" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-01-08T22:02:24" hostname="BOU499879" time="4.928">
   <properties/>
-  <testcase name="I can access the subpages through the nagigation bar #1" classname="Navigation" time="4.577"/>
-  <testcase name="I can access the subpages through the nagigation bar #2" classname="Navigation" time="2.815"/>
-  <testcase name="I can access the subpages through the nagigation bar #3" classname="Navigation" time="2.429"/>
-  <testcase name="I can access the subpages through the nagigation bar #4" classname="Navigation" time="3.002"/>
-  <testcase name="I can access the subpages through the nagigation bar #5" classname="Navigation" time="2.662"/>
+  <testcase name="Los usuarios pueden seleccionar un plan cuando esten logueados" classname="Navigation" time="4.928">
+    <failure message="java.lang.AssertionError: Lists differ at element [1]: Academia: $176 / año • 11 productos != Academia: $177 / año • 11 productos expected [Academia: $176 / año • 11 productos] but found [Academia: $177 / año • 11 productos]" type="java.lang.AssertionError">java.lang.AssertionError: Lists differ at element [1]: Academia: $176 / año • 11 productos != Academia: $177 / año • 11 productos expected [Academia: $176 / año • 11 productos] but found [Academia: $177 / año • 11 productos]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:1644)
+	at org.testng.Assert.assertEquals(Assert.java:1606)
+	at steps.PageSteps.validateCheckoutPlan(PageSteps.java:37)
+	at ✽.Puedo validar las opciones de los planes(file:///home/jtorr70/Documentos/TESTING/automation-QA/UdemySeleniumJava/src/test/resources/ArchivoFeature.feature:21)
+</failure>
+  </testcase>
   <system-out><![CDATA[
-Scenario Outline: I can access the subpages through the nagigation bar ?[90m# src/test/resources/features/ArchivoFeature.feature:11?[0m
-  ?[32mGiven ?[0m?[32mI navigate to www.freerangetesters.com?[0m                         ?[90m# steps.PageSteps.iNavigateToFRT()?[0m
-  ?[32mWhen ?[0m?[32mI go to ?[0m?[32m?[1mCursos?[0m?[32m using the navigation bar?[0m                         ?[90m# steps.PageSteps.navigationBarUse(java.lang.String)?[0m
-
-Scenario Outline: I can access the subpages through the nagigation bar ?[90m# src/test/resources/features/ArchivoFeature.feature:12?[0m
-  ?[32mGiven ?[0m?[32mI navigate to www.freerangetesters.com?[0m                         ?[90m# steps.PageSteps.iNavigateToFRT()?[0m
-  ?[32mWhen ?[0m?[32mI go to ?[0m?[32m?[1mRecursos?[0m?[32m using the navigation bar?[0m                       ?[90m# steps.PageSteps.navigationBarUse(java.lang.String)?[0m
-
-Scenario Outline: I can access the subpages through the nagigation bar ?[90m# src/test/resources/features/ArchivoFeature.feature:13?[0m
-  ?[32mGiven ?[0m?[32mI navigate to www.freerangetesters.com?[0m                         ?[90m# steps.PageSteps.iNavigateToFRT()?[0m
-  ?[32mWhen ?[0m?[32mI go to ?[0m?[32m?[1mNewsletter?[0m?[32m using the navigation bar?[0m                     ?[90m# steps.PageSteps.navigationBarUse(java.lang.String)?[0m
-
-Scenario Outline: I can access the subpages through the nagigation bar ?[90m# src/test/resources/features/ArchivoFeature.feature:14?[0m
-  ?[32mGiven ?[0m?[32mI navigate to www.freerangetesters.com?[0m                         ?[90m# steps.PageSteps.iNavigateToFRT()?[0m
-  ?[32mWhen ?[0m?[32mI go to ?[0m?[32m?[1mUdemy?[0m?[32m using the navigation bar?[0m                          ?[90m# steps.PageSteps.navigationBarUse(java.lang.String)?[0m
-
-Scenario Outline: I can access the subpages through the nagigation bar ?[90m# src/test/resources/features/ArchivoFeature.feature:15?[0m
-  ?[32mGiven ?[0m?[32mI navigate to www.freerangetesters.com?[0m                         ?[90m# steps.PageSteps.iNavigateToFRT()?[0m
-  ?[32mWhen ?[0m?[32mI go to ?[0m?[32m?[1mMentorías?[0m?[32m using the navigation bar?[0m                      ?[90m# steps.PageSteps.navigationBarUse(java.lang.String)?[0m
+@Plans
+Scenario: Los usuarios pueden seleccionar un plan cuando esten logueados ?[90m# src/test/resources/ArchivoFeature.feature:18?[0m
+  ?[32mGiven ?[0m?[32mI navigate to www.freerangetesters.com?[0m                           ?[90m# steps.PageSteps.iNavigateToFRT()?[0m
+  ?[32mWhen ?[0m?[32mSelecciono un plan?[0m                                                ?[90m# steps.PageSteps.clickOnThePlanButton()?[0m
+  ?[31mThen ?[0m?[31mPuedo validar las opciones de los planes?[0m                          ?[90m# steps.PageSteps.validateCheckoutPlan()?[0m
+      ?[31mjava.lang.AssertionError: Lists differ at element [1]: Academia: $176 / año • 11 productos != Academia: $177 / año • 11 productos expected [Academia: $176 / año • 11 productos] but found [Academia: $177 / año • 11 productos]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:1644)
+	at org.testng.Assert.assertEquals(Assert.java:1606)
+	at steps.PageSteps.validateCheckoutPlan(PageSteps.java:37)
+	at ✽.Puedo validar las opciones de los planes(file:///home/jtorr70/Documentos/TESTING/automation-QA/UdemySeleniumJava/src/test/resources/ArchivoFeature.feature:21)
+?[0m
 ]]></system-out>
   <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
