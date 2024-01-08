@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Navigation" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-01-08T22:02:24" hostname="BOU499879" time="4.928">
+<testsuite name="Navigation" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-01-08T22:10:38" hostname="BOU499879" time="5.369">
   <properties/>
-  <testcase name="Los usuarios pueden seleccionar un plan cuando esten logueados" classname="Navigation" time="4.928">
+  <testcase name="Los usuarios pueden seleccionar un plan cuando esten logueados" classname="Navigation" time="5.369">
     <failure message="java.lang.AssertionError: Lists differ at element [1]: Academia: $176 / año • 11 productos != Academia: $177 / año • 11 productos expected [Academia: $176 / año • 11 productos] but found [Academia: $177 / año • 11 productos]" type="java.lang.AssertionError">java.lang.AssertionError: Lists differ at element [1]: Academia: $176 / año • 11 productos != Academia: $177 / año • 11 productos expected [Academia: $176 / año • 11 productos] but found [Academia: $177 / año • 11 productos]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -27,6 +27,12 @@ Scenario: Los usuarios pueden seleccionar un plan cuando esten logueados ?[90m# 
 	at steps.PageSteps.validateCheckoutPlan(PageSteps.java:37)
 	at ✽.Puedo validar las opciones de los planes(file:///home/jtorr70/Documentos/TESTING/automation-QA/UdemySeleniumJava/src/test/resources/ArchivoFeature.feature:21)
 ?[0m
+
+    El scenario fallo, foto añadida a este reporte
+
+
+    Embedding Screenshot of the error [image/png 122166 bytes]
+
 ]]></system-out>
   <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
