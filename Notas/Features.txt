@@ -11,3 +11,6 @@
     #          | Mentorías  |
 
 export CUCUMBER_PUBLISH_TOKEN=a6eebb57-a6b6-4b8c-a1cb-0745ed05fe7d
+
+//run
+gradle test -Dcucumber.filter.tags="@Plans"

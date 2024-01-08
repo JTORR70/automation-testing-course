@@ -37,18 +37,18 @@ public class PageSteps {
         Assert.assertEquals(listaEsperada, lista);
     }
 
-    // @When("I go to {word} using the navigation bar")
-    // public void navigationBarUse(String section){
-    //     landingPage.clickOnSectionNavigationBar(section);
-    // }
+    @When("I go to {word} using the navigation bar")
+    public void navigationBarUse(String section){
+        landingPage.clickOnSectionNavigationBar(section);
+    }
 
-    // @And("select Fundamentos del Testing")
-    // public void navigateToIntro(){
-    //     cursosPage.clickFundamentosTestingLink();
-    // }
+    @And("select Fundamentos del Testing")
+    public void navigateToIntro(){
+        cursosPage.clickFundamentosTestingLink();
+    }
 
-    // @Then("Voy al curso de Introducción al Testing de Software")
-    // public void navigateToCourse(){
-    //     introSoftwareTesting.introTestingLink();
-    // }
+    @Then("Voy al curso de Introducción al Testing de Software")
+    public void navigateToCourse(){
+        introSoftwareTesting.introTestingLink();
+    }
 }
